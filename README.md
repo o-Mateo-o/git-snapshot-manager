@@ -3,7 +3,11 @@
 ## Overview
 Git Snapshot Manager is a tool for managing and comparing Git repository snapshots.
 
-- **Requires Git to be installed**
+## Requirements
+- Python 3
+- Git
+
+_NOTE_: **Tool is tested and fully functional just on Windows**
 
 ## Installation & Setup
 
@@ -27,12 +31,11 @@ gitss.bat
 For Linux/macOS, use:
 
 ```sh
-gitss.sh
+. gitss.sh
 ```
 
 This will create a virtual environment, install dependencies, and run the tool.
 
-NOTE: **Tool is tested and fully functional just on Windows**
 
 ## Features
 
@@ -64,19 +67,19 @@ Compare two snapshots by their indexed IDs.
 ### 2.1. Simple Report (Repository Names & Affected Files)
 
 ```sh
-gitss compare <id-number-1> <id-number-2>
+gitss compare <id_number_1> <id_number_2>
 ```
 
 ### 2.2. Verbose Report (Line-by-Line Changes)
 
 ```sh
-gitss compare <id-number-1> <id-number-2> -v
+gitss compare <id_number_1> <id_number_2> -v
 ```
 
 ### 2.3. Report Only for a Selected Repository
 
 ```sh
-gitss compare <id-number-1> <id-number-2> --name "First User"
+gitss compare <id_number_1> <id_number_2> --name "First User"
 ```
 
 ### 2.4. Get Command Help
